@@ -7,3 +7,15 @@ div {
 h3 {
   display: inline;
 }
+
+#continue {
+  width: 200px;
+  height: 40px;
+  background-color: #8888ff;
+  text-align: center;
+}
+#continue p {
+  display: inline-block;
+  margin: 0px;
+  padding: 11px 0px;
+}

@@ -8,5 +8,9 @@ var instructions =
 <p>Insert some more instructions here...</p>\
 <br>\
 <p>You get the idea...</p>\
+\
+<br><br>\
+\
+<div id=\"continue\"><p>Are you ready to continue?</p></div>\
 ";
 wholePage.innerHTML = instructions;
