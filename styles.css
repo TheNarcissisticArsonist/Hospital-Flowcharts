@@ -4,3 +4,6 @@ p {
 div {
   display: inline-block;
 }
+h3 {
+  display: inline;
+}
