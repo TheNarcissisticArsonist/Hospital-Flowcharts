@@ -27,10 +27,13 @@ var mainPageFormat = "\
 <div id=\"choice3\">Choice 3</div>\
 <div id=\"choice4\">Choice 4</div>\
 <br>\
-<img id=\"flowchart\" src=\"\"></img>\
+<img id=\"flowchart\" src=\"http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/4/11/1397210130748/Spring-Lamb.-Image-shot-2-011.jpg\"></img>\
 <br>\
 <br>\
-<div id=\"path\"></div>\
+<div id=\"path\">\
+  <div class=\"chosenItem\">First Flowchart Section</div>\
+  <div class=\"chosenItem\">Second Flowchart Section</div>\
+</div>\
 "
 document.getElementById("continue").addEventListener("click", function() {
   wholePage.innerHTML = mainPageFormat;
