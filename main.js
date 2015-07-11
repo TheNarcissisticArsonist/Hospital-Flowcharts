@@ -17,9 +17,9 @@ wholePage.innerHTML = instructions;
 
 //Set up the beginning of the flowchart
 var mainPageFormat = "\
-<h3>Slide Title</h3>\
+<h3 id=\"slideTitle\">Slide Title</h3>\
 <br>\
-<p>Some instructions (if necessary)</p>\
+<p id=\"slideInstructions\">Some instructions (if necessary)</p>\
 <br>\
 <br>\
 <div id=\"choice1\" class=\"choice\"><p></p></div>\
@@ -53,24 +53,30 @@ function setUpBeginning() {
   }
   elements.flowchart = document.getElementById("flowchart");
   elements.path = document.getElementById("path");
+  elements.slideTitle = document.getElementById("slideTitle");
+  elements.slideInstructions = document.getElementById("slideInstructions");
 
-  testSlide = new slide(["Choice 1", "Choice 2", "Choice 3", "Choice 4"], ["red", "blue", "green", "yellow"], "http://i.imgur.com/MTh65ph.jpg");
+  testSlide = new slide(["Choice 1", "Choice 2", "Choice 3", "Choice 4"], ["red", "blue", "green", "yellow"], "http://i.imgur.com/MTh65ph.jpg", "Test Slide", "No instructions (yet).");
   testSlide.load();
 };
 
-function slide(choices, colors, image) {
+function slide(choices, colors, image, slideTitle, slideInstructions) {
   this.choices = choices;
   for(i=0; i<4; i++) {
     this.choices[i] = "<p>" + this.choices[i] + "</p>";
   }
   this.colors = colors;
   this.image = image;
+  this.slideTitle = slideTitle;
+  this.slideInstructions = slideInstructions;
   this.load = function() {
     for(i=0; i<4; i++) {
       elements.choices[i].innerHTML = this.choices[i];
       elements.choices[i].style.backgroundColor = this.colors[i];
-      elements.flowchart.setAttribute("src", this.image);
     }
+    elements.flowchart.setAttribute("src", this.image);
+    elements.slideTitle.innerHTML = this.slideTitle;
+    elements.slideInstructions.innerHTML = this.slideInstructions;
   }
 };
 
