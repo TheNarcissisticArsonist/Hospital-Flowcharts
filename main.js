@@ -31,8 +31,8 @@ var mainPageFormat = "\
 <br>\
 <br>\
 <div id=\"path\">\
-  <div class=\"chosenItem\">First Flowchart Section</div>\
-  <div class=\"chosenItem\">Second Flowchart Section</div>\
+  <div class=\"chosenItem\"><p>First Flowchart Section</p></div>\
+  <div class=\"chosenItem\"><p>Second Flowchart Section</p></div>\
 </div>\
 "
 document.getElementById("continue").addEventListener("click", function() {
