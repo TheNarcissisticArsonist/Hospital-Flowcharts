@@ -22,10 +22,10 @@ var mainPageFormat = "\
 <p>Some instructions (if necessary)</p>\
 <br>\
 <br>\
-<div id=\"choice1\" class=\"choice\">Choice 1</div>\
-<div id=\"choice2\" class=\"choice\">Choice 2</div>\
-<div id=\"choice3\" class=\"choice\">Choice 3</div>\
-<div id=\"choice4\" class=\"choice\">Choice 4</div>\
+<div id=\"choice1\" class=\"choice\"><p>Choice 1</p></div>\
+<div id=\"choice2\" class=\"choice\"><p>Choice 2</p></div>\
+<div id=\"choice3\" class=\"choice\"><p>Choice 3</p></div>\
+<div id=\"choice4\" class=\"choice\"><p>Choice 4</p></div>\
 <br>\
 <img id=\"flowchart\" src=\"http://i.imgur.com/MTh65ph.jpg\"></img>\
 <br>\
