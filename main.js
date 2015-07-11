@@ -1,7 +1,6 @@
 //Set up the first part of the page, with instructions and such
 var wholePage = document.getElementById("wholePage");
-var instructions =
-"\
+var instructions = "\
 <h3>Instructions:</h3>\
 <br>\
 <p>Insert some instructions here...</p>\
@@ -17,6 +16,24 @@ var instructions =
 wholePage.innerHTML = instructions;
 
 //Set up the beginning of the flowchart
+var mainPageFormat = "\
+<h3>Slide Title</h3>\
+<br>\
+<p>Some instructions (if necessary)</p>\
+<br>\
+<br>\
+<div id=\"choice1\">Choice 1</div>\
+<div id=\"choice2\">Choice 2</div>\
+<div id=\"choice3\">Choice 3</div>\
+<div id=\"choice4\">Choice 4</div>\
+<br>\
+<img id=\"flowchart\" src=\"\"></img>\
+<br>\
+<br>\
+<div id=\"path\"></div>\
+"
 document.getElementById("continue").addEventListener("click", function() {
-  
+  wholePage.innerHTML = mainPageFormat;
 });
+//http://www.w3schools.com/tags/tag_map.asp
+//http://www.html-5-tutorial.com/map-and-area-elements.htm
