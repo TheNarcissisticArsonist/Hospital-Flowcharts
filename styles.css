@@ -25,3 +25,13 @@ h3 {
 
 
 /*     Main Page     */
+div.choice {
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  margin: 1px;
+}
+div.choice p {
+  display: inline-block;
+  vertical-align: middle;
+}
