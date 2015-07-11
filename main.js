@@ -55,6 +55,7 @@ function setUpBeginning() {
   elements.path = document.getElementById("path");
 
   testSlide = new slide(["Choice 1", "Choice 2", "Choice 3", "Choice 4"], ["red", "blue", "green", "yellow"], "http://i.imgur.com/MTh65ph.jpg");
+  testSlide.load();
 };
 
 function slide(choices, colors, image) {
