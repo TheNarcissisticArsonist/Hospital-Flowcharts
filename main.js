@@ -53,14 +53,14 @@ var testSlide = new slide(["Choice 1", "Choice 2", "Choice 3", "Choice 4"], ["re
 //Later slides use a different function
 function setUpBeginning() {
   elements.choices = [];
-  for(i=1; i<=4; i++) {
-    elements.choices[i-1] = document.getElementById("choice"+i);
+  for(i=0; i<4; i++) {
+    elements.choices[i] = document.getElementById("choice"+String(i+1));
   }
   elements.flowchart = document.getElementById("flowchart");
   elements.path = document.getElementById("path");
   elements.slideTitle = document.getElementById("slideTitle");
   elements.slideInstructions = document.getElementById("slideInstructions");
-
+  
   testSlide.load();
 };
 
