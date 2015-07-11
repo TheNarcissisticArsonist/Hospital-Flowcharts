@@ -1,3 +1,4 @@
+/*     Globals     */
 p {
   display: inline;
 }
@@ -8,6 +9,8 @@ h3 {
   display: inline;
 }
 
+
+/*     Intro page     */
 #continue {
   width: 200px;
   height: 40px;
@@ -19,3 +22,6 @@ h3 {
   margin: 0px;
   padding: 11px 0px;
 }
+
+
+/*     Main Page     */
