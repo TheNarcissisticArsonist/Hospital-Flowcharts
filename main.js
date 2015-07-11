@@ -22,21 +22,35 @@ var mainPageFormat = "\
 <p>Some instructions (if necessary)</p>\
 <br>\
 <br>\
-<div id=\"choice1\" class=\"choice\"><p>Choice 1</p></div>\
-<div id=\"choice2\" class=\"choice\"><p>Choice 2</p></div>\
-<div id=\"choice3\" class=\"choice\"><p>Choice 3</p></div>\
-<div id=\"choice4\" class=\"choice\"><p>Choice 4</p></div>\
+<div id=\"choice1\" class=\"choice\"><p></p></div>\
+<div id=\"choice2\" class=\"choice\"><p></p></div>\
+<div id=\"choice3\" class=\"choice\"><p></p></div>\
+<div id=\"choice4\" class=\"choice\"><p></p></div>\
 <br>\
-<img id=\"flowchart\" src=\"http://i.imgur.com/MTh65ph.jpg\"></img>\
+<img id=\"flowchart\" src=\"\"></img>\
 <br>\
 <br>\
 <div id=\"path\">\
-  <div class=\"chosenItem\"><p>First Flowchart Section</p></div>\
-  <div class=\"chosenItem\"><p>Second Flowchart Section</p></div>\
+  <div class=\"chosenItem\"><p>First Stop</p></div>\
+  <div class=\"chosenItem\"><p>Second Stop</p></div>\
 </div>\
 "
 document.getElementById("continue").addEventListener("click", function() {
   wholePage.innerHTML = mainPageFormat;
+  setUpBeginning();
 });
+
+//Image mapping
 //http://www.w3schools.com/tags/tag_map.asp
 //http://www.html-5-tutorial.com/map-and-area-elements.htm
+
+var elements = {};
+
+function setUpBeginning() {
+  elements.choices = [];
+  for(i=1; i<=4; i++) {
+    elements.choices[i-1] = document.getElementById("choice"+i);
+  }
+  elements.flowchart = document.getElementById("flowchart");
+  elements.path = document.getElementById("path");
+}
