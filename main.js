@@ -1,37 +1,37 @@
 //Set up the first part of the page, with instructions and such
 var wholePage = document.getElementById("wholePage");
 var instructions = "\
-<h3>Instructions:</h3>\
-<br>\
-<p>Insert some instructions here...</p>\
-<br>\
-<p>Insert some more instructions here...</p>\
-<br>\
-<p>You get the idea...</p>\
-\
-<br><br>\
-\
-<div id=\"continue\"><p>Are you ready to continue?</p></div>\
-";
+  <h3>Instructions:</h3>\
+  <br>\
+  <p>Insert some instructions here...</p>\
+  <br>\
+  <p>Insert some more instructions here...</p>\
+  <br>\
+  <p>You get the idea...</p>\
+  \
+  <br><br>\
+  \
+  <div id=\"continue\"><p>Are you ready to continue?</p></div>\
+  ";
 wholePage.innerHTML = instructions;
 
 //Set up the beginning of the flowchart
 var mainPageFormat = "\
-<h3 id=\"slideTitle\">Slide Title</h3>\
-<br>\
-<p id=\"slideInstructions\">Some instructions (if necessary)</p>\
-<br>\
-<br>\
-<div id=\"choice1\" class=\"choice\"><p></p></div>\
-<div id=\"choice2\" class=\"choice\"><p></p></div>\
-<div id=\"choice3\" class=\"choice\"><p></p></div>\
-<div id=\"choice4\" class=\"choice\"><p></p></div>\
-<br>\
-<img id=\"flowchart\" src=\"\"></img>\
-<br>\
-<br>\
-<div id=\"path\"></div>\
-"
+  <h3 id=\"slideTitle\">Slide Title</h3>\
+  <br>\
+  <p id=\"slideInstructions\">Some instructions (if necessary)</p>\
+  <br>\
+  <br>\
+  <div id=\"choice1\" class=\"choice\"><p></p></div>\
+  <div id=\"choice2\" class=\"choice\"><p></p></div>\
+  <div id=\"choice3\" class=\"choice\"><p></p></div>\
+  <div id=\"choice4\" class=\"choice\"><p></p></div>\
+  <br>\
+  <img id=\"flowchart\" src=\"\"></img>\
+  <br>\
+  <br>\
+  <div id=\"path\"></div>\
+  ";
 document.getElementById("continue").addEventListener("click", function() {
   wholePage.innerHTML = mainPageFormat;
   setUpBeginning();
@@ -60,7 +60,7 @@ function setUpBeginning() {
   elements.path = document.getElementById("path");
   elements.slideTitle = document.getElementById("slideTitle");
   elements.slideInstructions = document.getElementById("slideInstructions");
-  
+
   testSlide.load();
 };
 
