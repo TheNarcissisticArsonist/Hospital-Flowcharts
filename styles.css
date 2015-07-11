@@ -35,3 +35,7 @@ div.choice p {
   display: inline-block;
   vertical-align: middle;
 }
+div#path {
+  border: 1px dotted black;
+  padding: 5px;
+}
