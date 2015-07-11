@@ -53,4 +53,24 @@ function setUpBeginning() {
   }
   elements.flowchart = document.getElementById("flowchart");
   elements.path = document.getElementById("path");
-}
+
+  testSlide = new slide(["Choice 1", "Choice 2", "Choice 3", "Choice 4"], ["red", "blue", "green", "yellow"], "http://i.imgur.com/MTh65ph.jpg");
+};
+
+function slide(choices, colors, image) {
+  this.choices = choices;
+  for(i=0; i<4; i++) {
+    this.choices[i] = "<p>" + this.choices[i] + "</p>";
+  }
+  this.colors = colors;
+  this.image = image;
+  this.load = function() {
+    for(i=0; i<4; i++) {
+      elements.choices[i].innerHTML = this.choices[i];
+      elements.choices[i].style.backgroundColor = this.colors[i];
+      elements.flowchart.setAttribute("src", this.image);
+    }
+  }
+};
+
+var testSlide;
