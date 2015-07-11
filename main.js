@@ -27,7 +27,7 @@ var mainPageFormat = "\
 <div id=\"choice3\">Choice 3</div>\
 <div id=\"choice4\">Choice 4</div>\
 <br>\
-<img id=\"flowchart\" src=\"http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/4/11/1397210130748/Spring-Lamb.-Image-shot-2-011.jpg\"></img>\
+<img id=\"flowchart\" src=\"http://i.imgur.com/MTh65ph.jpg\"></img>\
 <br>\
 <br>\
 <div id=\"path\">\
