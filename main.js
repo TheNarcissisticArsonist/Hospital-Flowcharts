@@ -44,8 +44,16 @@ document.getElementById("continue").addEventListener("click", function() {
 //http://www.w3schools.com/tags/tag_map.asp
 //http://www.html-5-tutorial.com/map-and-area-elements.htm
 
+//Main section of the code...
+
+//An object containing the objects of all page elements needed
 var elements = {};
 
+//The slides used
+var testSlide = new slide(["Choice 1", "Choice 2", "Choice 3", "Choice 4"], ["red", "blue", "green", "yellow"], "http://i.imgur.com/MTh65ph.jpg", "Test Slide", "No instructions (yet).");
+
+//Used to set up the first slide
+//Later slides use a different function
 function setUpBeginning() {
   elements.choices = [];
   for(i=1; i<=4; i++) {
@@ -56,10 +64,10 @@ function setUpBeginning() {
   elements.slideTitle = document.getElementById("slideTitle");
   elements.slideInstructions = document.getElementById("slideInstructions");
 
-  testSlide = new slide(["Choice 1", "Choice 2", "Choice 3", "Choice 4"], ["red", "blue", "green", "yellow"], "http://i.imgur.com/MTh65ph.jpg", "Test Slide", "No instructions (yet).");
   testSlide.load();
 };
 
+//The slide class
 function slide(choices, colors, image, slideTitle, slideInstructions) {
   this.choices = choices;
   for(i=0; i<4; i++) {
@@ -79,5 +87,3 @@ function slide(choices, colors, image, slideTitle, slideInstructions) {
     elements.slideInstructions.innerHTML = this.slideInstructions;
   }
 };
-
-var testSlide;
