@@ -27,6 +27,7 @@ var mainPageFormat = "\
   <div id=\"choice3\" class=\"choice\"><p></p></div>\
   <div id=\"choice4\" class=\"choice\"><p></p></div>\
   <br>\
+  <br>\
   <img id=\"flowchart\" src=\"\"></img>\
   <br>\
   <br>\
