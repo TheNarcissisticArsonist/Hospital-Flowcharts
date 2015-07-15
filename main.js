@@ -94,3 +94,12 @@ function slide(choices, colors, image, slideTitle, slideInstructions) {
     elements.slideInstructions.innerHTML = this.slideInstructions;
   }
 };
+
+//Add element to the path
+function addChoice(choice, color) {
+  originalHTML = elements.path.innerHTML;
+  newElement = "<div id=\"" + choice + "\" class=\"chosenItem\"><p>" + choice + "</p></div>"
+  newHTML = originalHTML + newElement;
+  elements.path.innerHTML = newHTML;
+  document.getElementById(choice).style.backgroundColor = color;
+}
