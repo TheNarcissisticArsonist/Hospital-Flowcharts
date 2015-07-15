@@ -47,7 +47,12 @@ document.getElementById("continue").addEventListener("click", function() {
 var elements = {};
 
 //The slides used
-var testSlide = new slide(["Choice 1", "Choice 2", "Choice 3", "Choice 4"], ["red", "blue", "green", "yellow"], "http://i.imgur.com/MTh65ph.jpg", "Test Slide", "No instructions (yet).");
+var testSlide = new slide(
+  ["Choice 1", "Choice 2", "Choice 3", "Choice 4"],
+  ["red", "blue", "green", "yellow"],
+  "http://i.imgur.com/MTh65ph.jpg",
+  "Test Slide",
+  "No instructions (yet).");
 
 //Used to set up the first slide
 //Later slides use a different function
