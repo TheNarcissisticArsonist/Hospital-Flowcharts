@@ -48,5 +48,22 @@ div.chosenItem {
 }
 div.chosenItem p {
   display: inline-block;
-  vertical-align: middle;
+  margin: 16px 0px;
+}
+
+div.control {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  margin: 1px;
+}
+div.control p {
+  display: inline-block;
+  margin: 6px 0px;
+}
+div#reset {
+  background-color: red;
+}
+div#back {
+  background-color: blue;
 }

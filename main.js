@@ -34,8 +34,8 @@ var mainPageFormat = "\
   <div id=\"path\"></div>\
   <br>\
   <br>\
-  <div id=\"reset\" class=\"control\">Reset</div>\
-  <div id=\"back\" class=\"control\">Back</div>\
+  <div id=\"reset\" class=\"control\"><p>Reset</p></div>\
+  <div id=\"back\" class=\"control\"><p>Back</p></div>\
   ";
 document.getElementById("continue").addEventListener("click", function() {
   wholePage.innerHTML = mainPageFormat;
