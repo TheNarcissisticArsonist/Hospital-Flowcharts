@@ -143,7 +143,7 @@ function setUpBeginning() {
   elements.slideTitle = document.getElementById("slideTitle");
   elements.slideInstructions = document.getElementById("slideInstructions");
 
-  testSlide.load();
+  beforeFirstSlide.load();
 };
 
 //The slide class
