@@ -58,6 +58,78 @@ var testSlide = new slide(
   "http://i.imgur.com/MTh65ph.jpg",
   "Test Slide",
   "No instructions (yet).");
+var beforeFirstSlide = new slide(
+  ["Survival Flight", "Ambulance", "Walk-In", ""],
+  ["#4E67C7", "#4E67C7", "#4E67C7", "#ffffff"],
+  "",
+  "Slide Title",
+  "Slide instructions");
+var acuityDecisionSurvivalFlight = new slide(
+  ["High", "Low", "", ""],
+  ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
+  "/Pictures/Acuity Decision - Survival Flight.png",
+  "Slide Title",
+  "Slide instructions");
+var acuityDecisionAmbulence = new slide(
+  ["High", "Low", "", ""],
+  ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
+  "/Pictures/Acuity Decision - Ambulence.png",
+  "Slide Title",
+  "Slide instructions");
+var acuityDecisionWalk-In = new slide(
+  ["High", "Low", "", ""],
+  ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
+  "/Pictures/Acuity Decision - Walk-In.png",
+  "Slide Title",
+  "Slide instructions");
+var highAcuity = new slide(
+  ["", "", "", "",],
+  ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+  "/Pictures/High Acuity.png",
+  "Slide Title",
+  "Slide instructions");
+var lowAcuity = new slide(
+  ["Treat", "Discharge", "Admit", ""],
+  ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
+  "/Pictures/Low Acuity.png",
+  "Slide Title",
+  "Slide instructions");
+var careDecisionTreat = new slide(
+  ["Treatment", "Tests", "Consults", ""],
+  ["#5DCEAE", "#5DCEAE", "#5DCEAE", "#ffffff"],
+  "/Pictures/Care Decision - Treat.png",
+  "Slide Title",
+  "Slide instructions");
+var careDecisionDischarge = new slide(
+  ["", "", "", ""],
+  ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+  "/Pictures/Care Decision - Discharge.png",
+  "Slide Title",
+  "Slide instructions");
+var careDecisionAdmit = new slide(
+  ["", "", "", ""],
+  ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+  "/Pictures/Care Decision - Admit.png",
+  "Slide Title",
+  "Slide instructions");
+var neededTreatment = new slide(
+  ["Treat", "Discharge", "Admit", ""],
+  ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
+  "/Pictures/Needed - Treatment.png",
+  "Slide Title",
+  "Slide instructions");
+var neededTests = new slide(
+  ["Treat", "Discharge", "Admit", ""],
+  ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
+  "/Pictures/Needed - Tests.png",
+  "Slide Title",
+  "Slide instructions");
+var neededConsults = new slide(
+  ["Treat", "Discharge", "Admit", ""],
+  ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
+  "/Pictures/Needed - Consults.png",
+  "Slide Title",
+  "Slide instructions");
 
 //Used to set up the first slide
 //Later slides use a different function
