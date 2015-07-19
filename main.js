@@ -76,7 +76,7 @@ var acuityDecisionAmbulence = new slide(
   "/Pictures/Acuity Decision - Ambulence.png",
   "Slide Title",
   "Slide instructions");
-var acuityDecisionWalk-In = new slide(
+var acuityDecisionWalkIn = new slide(
   ["High", "Low", "", ""],
   ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
   "/Pictures/Acuity Decision - Walk-In.png",
