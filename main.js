@@ -178,5 +178,13 @@ function addChoice(choice, color) {
   newHTML = originalHTML + newElement;
   elements.path.innerHTML = newHTML;
   list = document.getElementsByClassName(choice);
-  list[list.length-1].style.background-color = color;
+  list[list.length-1].style.backgroundColor = color;
+}
+
+//Convert underscores to spaces and vice-versa
+function removeSpaces(str) {
+  return str.replace(" ", "_");
+}
+function removeUnderscores(str) {
+  return str.replace("_", " ");
 }
