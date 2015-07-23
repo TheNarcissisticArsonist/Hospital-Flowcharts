@@ -173,6 +173,7 @@ function slide(choices, colors, image, slideTitle, slideInstructions) {
 
 //Add element to the path
 function addChoice(choice, color) {
+  choice = removeSpaces(choice);
   originalHTML = elements.path.innerHTML;
   newElement = "<div class=\"chosenItem " + choice + "\"><p>" + choice + "</p></div>"
   newHTML = originalHTML + newElement;
