@@ -255,10 +255,5 @@ function back() {
     alert("You have to go somewhere before you can go back!");
     return;
   }
-  console.log(fullHTML[len-2]);
-  console.log(fullHTML[len-2].children);
-  console.log(fullHTML[len-2].children[0]);
-  console.log(fullHTML[len-2].children[0].innerHTML);
-  console.log(slideChoices[fullHTML[len-2].children[0].innerHTML]);
   slideChoices[fullHTML[len-2].children[0].innerHTML].load();
 }
