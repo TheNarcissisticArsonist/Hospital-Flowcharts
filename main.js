@@ -165,6 +165,7 @@ function setUpBeginning() {
   }
 
   document.getElementById("reset").addEventListener("click", reset);
+  document.getElementById("back").addEventListener("click", back);
 
   elements.path.style.display = "none";
 
@@ -240,4 +241,9 @@ function reset() {
   elements.path.innerHTML = "";
   elements.path.style.display = "none";
   beforeFirstSlide.load();
+}
+
+//Back button
+function back() {
+
 }
