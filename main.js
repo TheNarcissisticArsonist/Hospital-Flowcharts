@@ -174,8 +174,9 @@ function slide(choices, colors, image, slideTitle, slideInstructions) {
 //Add element to the path
 function addChoice(choice, color) {
   originalHTML = elements.path.innerHTML;
-  newElement = "<div id=\"" + choice + "\" class=\"chosenItem\"><p>" + choice + "</p></div>"
+  newElement = "<div class=\"chosenItem " + choice + "\"><p>" + choice + "</p></div>"
   newHTML = originalHTML + newElement;
   elements.path.innerHTML = newHTML;
-  document.getElementById(choice).style.backgroundColor = color;
+  list = document.getElementsByClassName(choice);
+  list[list.length-1].style.background-color = color;
 }
