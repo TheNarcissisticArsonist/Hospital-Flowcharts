@@ -59,7 +59,7 @@ var testSlide = new slide(
   "Test Slide",
   "No instructions (yet).");
 var beforeFirstSlide = new slide(
-  ["Survival Flight", "Ambulance", "Walk-In", ""],
+  ["Survival Flight", "Ambulance", "Walk In", ""],
   ["#4E67C7", "#4E67C7", "#4E67C7", "#ffffff"],
   "",
   "Slide Title",
@@ -135,7 +135,7 @@ var neededConsults = new slide(
 var slideChoices = {
   Survival_Flight:  acuityDecisionSurvivalFlight,
   Ambulance:        acuityDecisionAmbulence,
-  Walk-In:          acuityDecisionWalkIn,
+  Walk_In:          acuityDecisionWalkIn,
   High:             highAcuity,
   Low:              lowAcuity,
   Treat:            careDecisionTreat,
