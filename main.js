@@ -213,4 +213,12 @@ function removeUnderscores(str) {
 //Listen for clicks and load the logically following slide
 function loadNextSlide(element) {
   choice = element.innerHTML;
+  choice = choice.replace("<p>", "");
+  choice = choice.replace("</p>", "");
+
+  addChoice(choice, element.style.backgroundColor);
+
+  choice = removeSpaces(choice);
+  slide = slideChoices[choice];
+  slide.load();
 }
