@@ -249,6 +249,8 @@ function back() {
   len = fullHTML.length;
   if(len == 1) {
     beforeFirstSlide.load();
+    elements.path.removeChild(elements.path.childNodes[elements.path.childNodes.length-1]);
+    elements.path.style.display = "none";
     return;
   }
   else if(len == 0) {
@@ -256,4 +258,5 @@ function back() {
     return;
   }
   slideChoices[fullHTML[len-2].children[0].innerHTML].load();
+  elements.path.removeChild(elements.path.childNodes[elements.path.childNodes.length-1]);
 }
