@@ -232,5 +232,6 @@ function loadNextSlide(element) {
 
 //Reset the page
 function reset() {
-
+  elements.path.innerHTML = "";
+  beforeFirstSlide.load();
 }
