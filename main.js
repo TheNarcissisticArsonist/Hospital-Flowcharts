@@ -135,13 +135,18 @@ var neededConsults = new slide(
 //Later slides use a different function
 function setUpBeginning() {
   elements.choices = [];
-  for(i=0; i<4; i++) {
+  for(i=0; i<4; ++i) {
     elements.choices[i] = document.getElementById("choice"+String(i+1));
   }
   elements.flowchart = document.getElementById("flowchart");
   elements.path = document.getElementById("path");
   elements.slideTitle = document.getElementById("slideTitle");
   elements.slideInstructions = document.getElementById("slideInstructions");
+  for(i=0; i<4; ++i) {
+    elements.choices[i].addEventListener("click", function() {
+      loadNextSlide(this);
+    });
+  }
 
   beforeFirstSlide.load();
 };
@@ -150,7 +155,7 @@ function setUpBeginning() {
 function slide(choices, colors, image, slideTitle, slideInstructions) {
   this.choices = choices;
   //Add p tags around each item in choices[]
-  for(i=0; i<4; i++) {
+  for(i=0; i<4; ++i) {
     this.choices[i] = "<p>" + this.choices[i] + "</p>";
   }
 
@@ -161,7 +166,7 @@ function slide(choices, colors, image, slideTitle, slideInstructions) {
 
   //This loads the slide onto the page
   this.load = function() {
-    for(i=0; i<4; i++) {
+    for(i=0; i<4; ++i) {
       elements.choices[i].innerHTML = this.choices[i];
       elements.choices[i].style.backgroundColor = this.colors[i];
     }
@@ -188,4 +193,9 @@ function removeSpaces(str) {
 }
 function removeUnderscores(str) {
   return str.replace("_", " ");
+}
+
+//Listen for clicks and load the logically following slide
+function loadNextSlide(element) {
+  choice = element.innerHTML;
 }
