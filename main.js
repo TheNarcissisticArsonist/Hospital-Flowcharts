@@ -166,6 +166,8 @@ function setUpBeginning() {
 
   document.getElementById("reset").addEventListener("click", reset);
 
+  elements.path.style.display = "none";
+
   beforeFirstSlide.load();
 };
 
@@ -196,6 +198,9 @@ function slide(choices, colors, image, slideTitle, slideInstructions) {
 
 //Add element to the path
 function addChoice(choice, color) {
+  if(elements.path.style.display != "inline-block") {
+    elements.path.style.display = "inline-block";
+  }
   choice = removeSpaces(choice);
   originalHTML = elements.path.innerHTML;
   newElement = "<div class=\"chosenItem " + choice + "\"><p>" + choice + "</p></div>"
@@ -233,5 +238,6 @@ function loadNextSlide(element) {
 //Reset the page
 function reset() {
   elements.path.innerHTML = "";
+  elements.path.style.display = "none";
   beforeFirstSlide.load();
 }
