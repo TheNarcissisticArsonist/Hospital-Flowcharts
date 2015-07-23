@@ -61,7 +61,7 @@ var testSlide = new slide(
 var beforeFirstSlide = new slide(
   ["Survival Flight", "Ambulance", "Walk In", ""],
   ["#4E67C7", "#4E67C7", "#4E67C7", "#ffffff"],
-  "",
+  "./Pictures/Blank.png",
   "Slide Title",
   "Slide instructions");
 var acuityDecisionSurvivalFlight = new slide(
