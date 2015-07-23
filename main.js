@@ -157,11 +157,14 @@ function setUpBeginning() {
   elements.path = document.getElementById("path");
   elements.slideTitle = document.getElementById("slideTitle");
   elements.slideInstructions = document.getElementById("slideInstructions");
+
   for(i=0; i<4; ++i) {
     elements.choices[i].addEventListener("click", function() {
       loadNextSlide(this);
     });
   }
+
+  document.getElementById("reset").addEventListener("click", reset);
 
   beforeFirstSlide.load();
 };
@@ -221,4 +224,9 @@ function loadNextSlide(element) {
   choice = removeSpaces(choice);
   slide = slideChoices[choice];
   slide.load();
+}
+
+//Reset the page
+function reset() {
+  
 }
