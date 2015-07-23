@@ -219,6 +219,10 @@ function loadNextSlide(element) {
   choice = choice.replace("<p>", "");
   choice = choice.replace("</p>", "");
 
+  if(choice == "") {
+    return;
+  }
+
   addChoice(choice, element.style.backgroundColor);
 
   choice = removeSpaces(choice);
@@ -228,5 +232,5 @@ function loadNextSlide(element) {
 
 //Reset the page
 function reset() {
-  
+
 }
