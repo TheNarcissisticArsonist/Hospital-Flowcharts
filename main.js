@@ -218,7 +218,7 @@ var transfer = new slide(
 var careLevelDiffTeamService = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
-  "./Pictures/Care Level Decision - Different Team Service"
+  "./Pictures/Care Level Decision - Different Team Service",
   "Slide Title",
   "Slide instructions"
 );
@@ -278,6 +278,9 @@ var slideChoices = {
   Treatment:        neededTreatment,
   Tests:            neededTests,
   Consults:         neededConsults
+};
+var slideChoices2 = {
+
 };
 
 //Used to set up the first slide
