@@ -162,6 +162,19 @@ var careLevelPACU = new slide(
   "./Pictures/Care Level Decision - PACU.png",
   "Slide Title",
   "Slide instructions");
+var careGeneral = new slide(
+  ["Treat", "Discharge", "Transfer", ""],
+  ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
+  "./Pictures/Care Decision - General.png",
+  "Slide Title",
+  "Slide instructions");
+var careICU = new slide(
+  ["Treat", "Discharge", "Transfer", ""],
+  ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
+  "./Pictures/Care Decision - ICU.png",
+  "Slide Title",
+  "Slide instructions");
+
 
 //An object containing reference pairs for all of the slide choices and their respective slides
 var slideChoices = {
