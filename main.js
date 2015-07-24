@@ -180,6 +180,12 @@ var treat = new slide(
   "./Pictures/Treat.png",
   "Slide Title",
   "Slide isntructions");
+var discharge = new slide(
+  ["", "", "", ""],
+  ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+  "./Pictures/Discharge.png",
+  "Slide Title",
+  "Slide instructions");
 
 //An object containing reference pairs for all of the slide choices and their respective slides
 var slideChoices = {
