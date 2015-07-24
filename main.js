@@ -132,6 +132,36 @@ var neededConsults = new slide(
   "./Pictures/Needed\ -\ Consults.png",
   "Slide Title",
   "Slide instructions");
+var enterInpatient = new slide(
+  ["ED", "Direct Admit", "Hospital Transfer", "PACU"],
+  ["#ffff00", "#ffff00", "#ffff00", "#ffff00"],
+  "./Pictures/Blank.png",
+  "Slide Title",
+  "Slide instructions");
+var careLevelED = new slide(
+  ["ICU", "General", "", ""],
+  ["#ffff00", "#ffff00", "ffffff", "ffffff"],
+  "./Pictures/Care Level Decision - ED.png",
+  "Slide Title",
+  "Slide instructions");
+var careLevelDirectAdmit = new slide(
+  ["ICU", "General", "", ""],
+  ["#ffff00", "#ffff00", "ffffff", "ffffff"],
+  "./Pictures/Care Level Decision - Direct Admit.png",
+  "Slide Title",
+  "Slide instructions");
+var careLevelHospitalTransfer = new slide(
+  ["ICU", "General", "", ""],
+  ["#ffff00", "#ffff00", "ffffff", "ffffff"],
+  "./Pictures/Care Level Decision - Hospital Transfer.png",
+  "Slide Title",
+  "Slide instructions");
+var careLevelPACU = new slide(
+  ["ICU", "General", "", ""],
+  ["#ffff00", "#ffff00", "ffffff", "ffffff"],
+  "./Pictures/Care Level Decision - PACU.png",
+  "Slide Title",
+  "Slide instructions");
 
 //An object containing reference pairs for all of the slide choices and their respective slides
 var slideChoices = {
