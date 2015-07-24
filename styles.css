@@ -67,3 +67,13 @@ div#reset {
 div#back {
   background-color: blue;
 }
+div#wholeChart {
+  background-color: green;
+  text-align: center;
+  width: 166px;
+  margin: 1px;
+}
+div#wholeChart p {
+  display: inline-block;
+  margin: 6px 0px;
+}

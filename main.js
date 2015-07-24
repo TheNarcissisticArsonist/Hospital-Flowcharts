@@ -36,6 +36,8 @@ var mainPageFormat = "\
   <br>\
   <div id=\"reset\" class=\"control\"><p>Reset</p></div>\
   <div id=\"back\" class=\"control\"><p>Back</p></div>\
+  <br>\
+  <div id=\"wholeChart\"><p>See Whole Flowchart</p></div>\
   ";
 document.getElementById("continue").addEventListener("click", function() {
   wholePage.innerHTML = mainPageFormat;
