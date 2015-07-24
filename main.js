@@ -193,6 +193,27 @@ var transfer = new slide(
   "Slide Title",
   "Slide instructions"
 );
+var careLevelDiffTeamService = new slide(
+  ["ICU", "General", "", ""],
+  ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
+  "./Pictures/Care Level Decision - Different Team Service"
+  "Slide Title",
+  "Slide instructions"
+);
+var careLevelDiffUnit = new slide(
+  ["ICU", "General", "", ""],
+  ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
+  "./Pictures/Care Level Decision - Different Unit",
+  "Slide Title",
+  "Slide instructions"
+);
+var diffHealthSystem = new slide(
+  ["", "", "", ""],
+  ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+  "./Pictures/Different Health System.png",
+  "Slide Title",
+  "Slide instructions"
+);
 
 //An object containing reference pairs for all of the slide choices and their respective slides
 var slideChoices = {
