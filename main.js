@@ -59,133 +59,155 @@ var testSlide = new slide(
   ["red", "blue", "green", "yellow"],
   "http://i.imgur.com/MTh65ph.jpg",
   "Test Slide",
-  "No instructions (yet).");
+  "No instructions (yet)."
+);
 var beforeFirstSlide = new slide(
   ["Survival Flight", "Ambulance", "Walk In", ""],
   ["#4E67C7", "#4E67C7", "#4E67C7", "#ffffff"],
   "./Pictures/Blank.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var acuityDecisionSurvivalFlight = new slide(
   ["High", "Low", "", ""],
   ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
   "./Pictures/Acuity\ Decision\ -\ Survival\ Flight.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var acuityDecisionAmbulence = new slide(
   ["High", "Low", "", ""],
   ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
   "./Pictures/Acuity\ Decision\ -\ Ambulance.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var acuityDecisionWalkIn = new slide(
   ["High", "Low", "", ""],
   ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
   "./Pictures/Acuity\ Decision\ -\ Walk-In.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var highAcuity = new slide(
   ["", "", "", "",],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/High\ Acuity.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var lowAcuity = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Low\ Acuity.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var careDecisionTreat = new slide(
   ["Treatment", "Tests", "Consults", ""],
   ["#5DCEAE", "#5DCEAE", "#5DCEAE", "#ffffff"],
   "./Pictures/Care\ Decision\ -\ Treat.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var careDecisionDischarge = new slide(
   ["", "", "", ""],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/Care\ Decision\ -\ Discharge.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var careDecisionAdmit = new slide(
   ["", "", "", ""],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/Care\ Decision\ -\ Admit.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var neededTreatment = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Needed\ -\ Treatment.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var neededTests = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Needed\ -\ Tests.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var neededConsults = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Needed\ -\ Consults.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var enterInpatient = new slide(
   ["ED", "Direct Admit", "Hospital Transfer", "PACU"],
   ["#ffff00", "#ffff00", "#ffff00", "#ffff00"],
   "./Pictures/Blank.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var careLevelED = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "ffffff", "ffffff"],
   "./Pictures/Care Level Decision - ED.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var careLevelDirectAdmit = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "ffffff", "ffffff"],
   "./Pictures/Care Level Decision - Direct Admit.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var careLevelHospitalTransfer = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "ffffff", "ffffff"],
   "./Pictures/Care Level Decision - Hospital Transfer.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var careLevelPACU = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "ffffff", "ffffff"],
   "./Pictures/Care Level Decision - PACU.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var careGeneral = new slide(
   ["Treat", "Discharge", "Transfer", ""],
   ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
   "./Pictures/Care Decision - General.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var careICU = new slide(
   ["Treat", "Discharge", "Transfer", ""],
   ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
   "./Pictures/Care Decision - ICU.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var treat = new slide(
   ["Treatment", "Tests", "Consults", "Surgery"],
   ["#ffff00", "#ffff00", "#ffff00", "#ffff00"],
   "./Pictures/Treat.png",
   "Slide Title",
-  "Slide isntructions");
+  "Slide isntructions"
+);
 var discharge = new slide(
   ["", "", "", ""],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/Discharge.png",
   "Slide Title",
-  "Slide instructions");
+  "Slide instructions"
+);
 var transfer = new slide(
   ["Different Team/Service", "Different Unit", "Different Health System"],
   ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
@@ -211,6 +233,27 @@ var diffHealthSystem = new slide(
   ["", "", "", ""],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/Different Health System.png",
+  "Slide Title",
+  "Slide instructions"
+);
+var treatmentPatientNeeds = new slide(
+  ["Treat", "Discharge", "Transfer", ""],
+  ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
+  "./Pictures/Care Decision - Treatment.png",
+  "Slide Title",
+  "Slide instructions"
+);
+var testsPatientNeeds = new slide(
+  ["Treat", "Discharge", "Transfer", ""],
+  ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
+  "./Pictures/Care Decision - Tests.png",
+  "Slide Title",
+  "Slide instructions"
+);
+var consultsPatientNeeds = new slide(
+  ["Treat", "Discharge", "Transfer", ""],
+  ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
+  "./Pictures/Care Decision - Consults.png",
   "Slide Title",
   "Slide instructions"
 );
