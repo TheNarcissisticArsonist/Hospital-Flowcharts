@@ -174,7 +174,12 @@ var careICU = new slide(
   "./Pictures/Care Decision - ICU.png",
   "Slide Title",
   "Slide instructions");
-
+var treat = new slide(
+  ["Treatment", "Tests", "Consults", "Surgery"],
+  ["#ffff00", "#ffff00", "#ffff00", "#ffff00"],
+  "./Pictures/Treat.png",
+  "Slide Title",
+  "Slide isntructions");
 
 //An object containing reference pairs for all of the slide choices and their respective slides
 var slideChoices = {
