@@ -186,6 +186,13 @@ var discharge = new slide(
   "./Pictures/Discharge.png",
   "Slide Title",
   "Slide instructions");
+var transfer = new slide(
+  ["Different Team/Service", "Different Unit", "Different Health System"],
+  ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
+  "./Pictures/Transfer.png",
+  "Slide Title",
+  "Slide instructions"
+);
 
 //An object containing reference pairs for all of the slide choices and their respective slides
 var slideChoices = {
