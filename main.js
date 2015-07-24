@@ -168,6 +168,10 @@ function setUpBeginning() {
 
   document.getElementById("reset").addEventListener("click", reset);
   document.getElementById("back").addEventListener("click", back);
+  document.getElementById("wholeChart").addEventListener("click", function() {
+    wholeChartPage = window.open();
+    wholeChartPage.document.write("<img src=\"./Pictures/Whole Flowchart.png\"></img>");
+  });
 
   elements.path.style.display = "none";
 
