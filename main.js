@@ -266,7 +266,6 @@ var surgery = new slide(
 );
 
 //An object containing reference pairs for all of the slide choices and their respective slides
-var set1 = true;
 var slideChoices = {
   Survival_Flight:  acuityDecisionSurvivalFlight,
   Ambulance:        acuityDecisionAmbulence,
@@ -351,9 +350,6 @@ function addChoice(choice, color) {
   elements.path.innerHTML = newHTML;
   list = document.getElementsByClassName(choice);
   list[list.length-1].style.backgroundColor = color;
-  if(choice == "Admit") {
-    set1 = false;
-  }
 }
 
 //Convert underscores to spaces and vice-versa
@@ -377,12 +373,7 @@ function loadNextSlide(element) {
   addChoice(choice, element.style.backgroundColor);
 
   choice = removeSpaces(choice);
-  if(set1) {
-    slide = slideChoices[choice];
-  }
-  else {
-    slide = slideChoices2[choice];
-  }
+  slide = slideChoices[choice];
   slide.load();
 }
 
