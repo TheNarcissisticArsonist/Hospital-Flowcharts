@@ -257,6 +257,13 @@ var consultsPatientNeeds = new slide(
   "Slide Title",
   "Slide instructions"
 );
+var surgery = new slide(
+  ["ICU", "General", "", ""],
+  ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
+  "./Pictures/Surgery.png",
+  "Slide Title",
+  "Slide instructions"
+);
 
 //An object containing reference pairs for all of the slide choices and their respective slides
 var slideChoices = {
