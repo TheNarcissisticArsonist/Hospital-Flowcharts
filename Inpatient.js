@@ -254,15 +254,17 @@ function addChoice(choice, color) {
   if(elements.path.style.display != "inline-block") {
     elements.path.style.display = "inline-block";
   }
+  oldChoice = choice;
   choice = removeSpaces(choice);
   choice = removeSpaces(choice);
   choice = removeSlash(choice);
   originalHTML = elements.path.innerHTML;
-  newElement = "<div class=\"chosenItem " + choice + "\"><p>" + choice + "</p></div>"
+  newElement = "<div class=\"chosenItem " + choice + "\"><p>" + oldChoice + "</p></div>"
   newHTML = originalHTML + newElement;
   elements.path.innerHTML = newHTML;
   list = document.getElementsByClassName(choice);
   list[list.length-1].style.backgroundColor = color;
+  if(choice == "");
 }
 
 //Convert underscores to spaces and vice-versa
@@ -326,7 +328,7 @@ function back() {
     alert("You have to go somewhere before you can go back!");
     return;
   }
-  slideChoices[fullHTML[len-2].children[0].innerHTML].load();
+  slideChoices[removeSlash(removeSpaces(removeSpaces(fullHTML[len-2].children[0].innerHTML)))].load();
   if(fullHTML[len-2].children[0].innerHTML == "Transfer") {
     elements.choices[0].childNodes[0].style.margin = "6px 0px";
     elements.choices[2].childNodes[0].style.margin = "6px 0px";
