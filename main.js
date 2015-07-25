@@ -279,9 +279,6 @@ var slideChoices = {
   Tests:            neededTests,
   Consults:         neededConsults
 };
-var slideChoices2 = {
-
-};
 
 //Used to set up the first slide
 //Later slides use a different function
