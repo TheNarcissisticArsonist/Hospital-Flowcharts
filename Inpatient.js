@@ -264,7 +264,12 @@ function addChoice(choice, color) {
   elements.path.innerHTML = newHTML;
   list = document.getElementsByClassName(choice);
   list[list.length-1].style.backgroundColor = color;
-  if(choice == "");
+  if(oldChoice == "Different Team/Service" || oldChoice == "Different Health System") {
+    list[list.length-1].childNodes[0].style.margin = "7px 0px";
+  }
+  else {
+    list[list.length-1].childNodes[0].style.margin = "16px 0px";
+  }
 }
 
 //Convert underscores to spaces and vice-versa
@@ -297,8 +302,8 @@ function loadNextSlide(element) {
   slide = slideChoices[choice];
   slide.load();
   if(choice == "Transfer") {
-    elements.choices[0].childNodes[0].style.margin = "6px 0px";
-    elements.choices[2].childNodes[0].style.margin = "6px 0px";
+    elements.choices[0].childNodes[0].style.margin = "7px 0px";
+    elements.choices[2].childNodes[0].style.margin = "7px 0px";
   }
   else {
     for(i=0; i<4; ++i) {
@@ -330,8 +335,8 @@ function back() {
   }
   slideChoices[removeSlash(removeSpaces(removeSpaces(fullHTML[len-2].children[0].innerHTML)))].load();
   if(fullHTML[len-2].children[0].innerHTML == "Transfer") {
-    elements.choices[0].childNodes[0].style.margin = "6px 0px";
-    elements.choices[2].childNodes[0].style.margin = "6px 0px";
+    elements.choices[0].childNodes[0].style.margin = "7px 0px";
+    elements.choices[2].childNodes[0].style.margin = "7px 0px";
   }
   else {
     for(i=0; i<4; ++i) {
