@@ -118,7 +118,7 @@ var discharge = new slide(
   "Slide instructions"
 );
 var transfer = new slide(
-  ["Different Team/Service", "Different Unit", "Different Health System"],
+  ["Different Team/Service", "Different Unit", "Different Health System", ""],
   ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
   "./Pictures/Transfer.png",
   "Slide Title",
