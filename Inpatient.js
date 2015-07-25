@@ -127,14 +127,14 @@ var transfer = new slide(
 var careLevelDiffTeamService = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
-  "./Pictures/Care Level Decision - Different Team Service",
+  "./Pictures/Care Level Decision - Different Team Service.png",
   "Slide Title",
   "Slide instructions"
 );
 var careLevelDiffUnit = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
-  "./Pictures/Care Level Decision - Different Unit",
+  "./Pictures/Care Level Decision - Different Unit.png",
   "Slide Title",
   "Slide instructions"
 );
