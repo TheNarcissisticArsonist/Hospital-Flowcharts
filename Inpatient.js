@@ -277,8 +277,9 @@ function removeSlash(str) {
 //Listen for clicks and load the logically following slide
 function loadNextSlide(element) {
   choice = element.innerHTML;
-  choice = choice.replace("<p>", "");
-  choice = choice.replace("</p>", "");
+  choice = choice.slice(0, -4);
+  choice = choice.split(">");
+  choice = choice[1];
 
   if(choice == "") {
     return;
@@ -292,8 +293,8 @@ function loadNextSlide(element) {
   slide = slideChoices[choice];
   slide.load();
   if(choice == "Transfer") {
-    elements.choice[0].childNodes[0].style.margin = "2px 0px";
-    elements.choice[2].childNodes[0].style.margin = "2px 0px";
+    elements.choices[0].childNodes[0].style.margin = "6px 0px";
+    elements.choices[2].childNodes[0].style.margin = "6px 0px";
   }
   else {
     for(i=0; i<4; ++i) {
