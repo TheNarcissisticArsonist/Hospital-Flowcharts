@@ -258,7 +258,6 @@ function addChoice(choice, color) {
   choice = removeSpaces(choice);
   choice = removeSlash(choice);
   originalHTML = elements.path.innerHTML;
-  console.log(choice);
   newElement = "<div class=\"chosenItem " + choice + "\"><p>" + choice + "</p></div>"
   newHTML = originalHTML + newElement;
   elements.path.innerHTML = newHTML;
@@ -328,5 +327,14 @@ function back() {
     return;
   }
   slideChoices[fullHTML[len-2].children[0].innerHTML].load();
+  if(fullHTML[len-2].children[0].innerHTML == "Transfer") {
+    elements.choices[0].childNodes[0].style.margin = "6px 0px";
+    elements.choices[2].childNodes[0].style.margin = "6px 0px";
+  }
+  else {
+    for(i=0; i<4; ++i) {
+      elements.choices[i].childNodes[0].style.margin = "16px 0px";
+    }
+  }
   elements.path.removeChild(elements.path.childNodes[elements.path.childNodes.length-1]);
 }
