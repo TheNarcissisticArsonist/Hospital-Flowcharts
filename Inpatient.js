@@ -63,28 +63,28 @@ var enterInpatient = new slide(
 );
 var careLevelED = new slide(
   ["ICU", "General", "", ""],
-  ["#ffff00", "#ffff00", "ffffff", "ffffff"],
+  ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
   "./Pictures/Care Level Decision - ED.png",
   "Slide Title",
   "Slide instructions"
 );
 var careLevelDirectAdmit = new slide(
   ["ICU", "General", "", ""],
-  ["#ffff00", "#ffff00", "ffffff", "ffffff"],
+  ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
   "./Pictures/Care Level Decision - Direct Admit.png",
   "Slide Title",
   "Slide instructions"
 );
 var careLevelHospitalTransfer = new slide(
   ["ICU", "General", "", ""],
-  ["#ffff00", "#ffff00", "ffffff", "ffffff"],
+  ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
   "./Pictures/Care Level Decision - Hospital Transfer.png",
   "Slide Title",
   "Slide instructions"
 );
 var careLevelPACU = new slide(
   ["ICU", "General", "", ""],
-  ["#ffff00", "#ffff00", "ffffff", "ffffff"],
+  ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
   "./Pictures/Care Level Decision - PACU.png",
   "Slide Title",
   "Slide instructions"
@@ -176,17 +176,11 @@ var surgery = new slide(
 
 //An object containing reference pairs for all of the slide choices and their respective slides
 var slideChoices = {
-  Survival_Flight:  acuityDecisionSurvivalFlight,
-  Ambulance:        acuityDecisionAmbulence,
-  Walk_In:          acuityDecisionWalkIn,
-  High:             highAcuity,
-  Low:              lowAcuity,
-  Treat:            careDecisionTreat,
-  Discharge:        careDecisionDischarge,
-  Admit:            careDecisionAdmit,
-  Treatment:        neededTreatment,
-  Tests:            neededTests,
-  Consults:         neededConsults
+  ED:                 careLevelED,
+  Direct_Admit:       careLevelDirectAdmit,
+  Hospital_Transfer:  careLevelHospitalTransfer,
+  PACU:               careLevelPACU,
+
 };
 
 //Used to set up the first slide
@@ -216,7 +210,7 @@ function setUpBeginning() {
 
   elements.path.style.display = "none";
 
-  beforeFirstSlide.load();
+  enterInpatient.load();
 };
 
 //The slide class
@@ -279,6 +273,7 @@ function loadNextSlide(element) {
   addChoice(choice, element.style.backgroundColor);
 
   choice = removeSpaces(choice);
+  console.log(choice);
   slide = slideChoices[choice];
   slide.load();
 }
@@ -295,7 +290,7 @@ function back() {
   fullHTML = elements.path.children;
   len = fullHTML.length;
   if(len == 1) {
-    beforeFirstSlide.load();
+    enterInpatient.load();
     elements.path.removeChild(elements.path.childNodes[elements.path.childNodes.length-1]);
     elements.path.style.display = "none";
     return;
