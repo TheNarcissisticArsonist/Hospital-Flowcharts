@@ -289,7 +289,6 @@ function loadNextSlide(element) {
   choice = removeSpaces(choice);
   choice = removeSpaces(choice);
   choice = removeSlash(choice);
-  console.log(choice);
   slide = slideChoices[choice];
   slide.load();
 }
