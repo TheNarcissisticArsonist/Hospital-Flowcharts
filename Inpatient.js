@@ -255,7 +255,10 @@ function addChoice(choice, color) {
     elements.path.style.display = "inline-block";
   }
   choice = removeSpaces(choice);
+  choice = removeSpaces(choice);
+  choice = removeSlash(choice);
   originalHTML = elements.path.innerHTML;
+  console.log(choice);
   newElement = "<div class=\"chosenItem " + choice + "\"><p>" + choice + "</p></div>"
   newHTML = originalHTML + newElement;
   elements.path.innerHTML = newHTML;
