@@ -253,6 +253,9 @@ function loadNextSlide(element) {
   choice = removeSpaces(choice);
   slide = slideChoices[choice];
   slide.load();
+  if(choice == "Admit") {
+    window.open("./Inpatient.html");
+  }
 }
 
 //Reset the page
