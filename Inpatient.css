@@ -1,0 +1,79 @@
+/*     Globals     */
+p {
+  display: inline;
+}
+div {
+  display: inline-block;
+}
+h3 {
+  display: inline;
+}
+
+
+/*     Intro page     */
+#continue {
+  width: 200px;
+  height: 40px;
+  background-color: #8888ff;
+  text-align: center;
+}
+#continue p {
+  display: inline-block;
+  margin: 0px;
+  padding: 11px 0px;
+}
+
+
+/*     Main Page     */
+div.choice {
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  margin: 1px;
+}
+div.choice p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div#path {
+  border: 1px dotted black;
+  padding: 10px;
+}
+div.chosenItem {
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  margin: 1px;
+}
+div.chosenItem p {
+  display: inline-block;
+  margin: 16px 0px;
+}
+
+div.control {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  margin: 1px;
+}
+div.control p {
+  display: inline-block;
+  margin: 6px 0px;
+}
+div#reset {
+  background-color: red;
+}
+div#back {
+  background-color: blue;
+}
+div#wholeChart {
+  background-color: green;
+  text-align: center;
+  width: 166px;
+  margin: 1px;
+}
+div#wholeChart p {
+  display: inline-block;
+  margin: 6px 0px;
+}
