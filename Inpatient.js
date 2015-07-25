@@ -180,7 +180,18 @@ var slideChoices = {
   Direct_Admit:       careLevelDirectAdmit,
   Hospital_Transfer:  careLevelHospitalTransfer,
   PACU:               careLevelPACU,
-
+  ICU:                careICU,
+  General:            careGeneral,
+  Treat:              treat,
+  Discharge:          discharge,
+  Transfer:           transfer,
+  Treatment:          treatmentPatientNeeds,
+  Tests:              testsPatientNeeds,
+  Consults:           consultsPatientNeeds,
+  Surgery:            surgery,
+  Different_Team_Service:   careLevelDiffTeamService,
+  Different_Unit:           careLevelDiffUnit,
+  Different_Health_System:  diffHealthSystem
 };
 
 //Used to set up the first slide
@@ -259,6 +270,9 @@ function removeSpaces(str) {
 function removeUnderscores(str) {
   return str.replace("_", " ");
 }
+function removeSlash(str) {
+  return str.replace("/", "_");
+}
 
 //Listen for clicks and load the logically following slide
 function loadNextSlide(element) {
@@ -273,6 +287,8 @@ function loadNextSlide(element) {
   addChoice(choice, element.style.backgroundColor);
 
   choice = removeSpaces(choice);
+  choice = removeSpaces(choice);
+  choice = removeSlash(choice);
   console.log(choice);
   slide = slideChoices[choice];
   slide.load();
