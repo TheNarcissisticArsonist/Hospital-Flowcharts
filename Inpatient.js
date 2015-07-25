@@ -291,6 +291,15 @@ function loadNextSlide(element) {
   choice = removeSlash(choice);
   slide = slideChoices[choice];
   slide.load();
+  if(choice == "Transfer") {
+    elements.choice[0].childNodes[0].style.margin = "2px 0px";
+    elements.choice[2].childNodes[0].style.margin = "2px 0px";
+  }
+  else {
+    for(i=0; i<4; ++i) {
+      elements.choices[i].childNodes[0].style.margin = "16px 0px";
+    }
+  }
 }
 
 //Reset the page
