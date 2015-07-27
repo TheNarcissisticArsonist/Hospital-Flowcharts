@@ -1,16 +1,8 @@
 //Set up the first part of the page, with instructions and such
 var wholePage = document.getElementById("wholePage");
 var instructions = "\
-  <h3>Instructions:</h3>\
-  <br>\
-  <p>Insert some instructions here...</p>\
-  <br>\
-  <p>Insert some more instructions here...</p>\
-  <br>\
-  <p>You get the idea...</p>\
-  \
+  <h3>This is the ED flowchart.</h3>\
   <br><br>\
-  \
   <div id=\"continue\"><p>Are you ready to continue?</p></div>\
   ";
 wholePage.innerHTML = instructions;
@@ -65,85 +57,85 @@ var beforeFirstSlide = new slide(
   ["Survival Flight", "Ambulance", "Walk In", ""],
   ["#4E67C7", "#4E67C7", "#4E67C7", "#ffffff"],
   "./Pictures/Blank.png",
-  "Slide Title",
-  "Slide instructions"
+  "Specify how the Patient Enters the Health System",
+  "Click <em><strong>these</strong></em> boxes to act on the page."
 );
 var acuityDecisionSurvivalFlight = new slide(
   ["High", "Low", "", ""],
   ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
   "./Pictures/Acuity\ Decision\ -\ Survival\ Flight.png",
-  "Slide Title",
-  "Slide instructions"
+  "Specify What Acuity the Patient is Assigned",
+  ""
 );
 var acuityDecisionAmbulence = new slide(
   ["High", "Low", "", ""],
   ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
   "./Pictures/Acuity\ Decision\ -\ Ambulance.png",
-  "Slide Title",
-  "Slide instructions"
+  "Specify What Acuity the Patient is Assigned",
+  ""
 );
 var acuityDecisionWalkIn = new slide(
   ["High", "Low", "", ""],
   ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
   "./Pictures/Acuity\ Decision\ -\ Walk-In.png",
-  "Slide Title",
-  "Slide instructions"
+  "Specify What Acuity the Patient is Assigned",
+  ""
 );
 var highAcuity = new slide(
   ["", "", "", "",],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/High\ Acuity.png",
-  "Slide Title",
-  "Slide instructions"
+  "",
+  ""
 );
 var lowAcuity = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Low\ Acuity.png",
-  "Slide Title",
-  "Slide instructions"
+  "Specify What is Decided that the Patient Needs",
+  ""
 );
 var careDecisionTreat = new slide(
   ["Treatment", "Tests", "Consults", ""],
   ["#5DCEAE", "#5DCEAE", "#5DCEAE", "#ffffff"],
   "./Pictures/Care\ Decision\ -\ Treat.png",
-  "Slide Title",
-  "Slide instructions"
+  "Specify What the Attending's Orders are",
+  ""
 );
 var careDecisionDischarge = new slide(
   ["", "", "", ""],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/Care\ Decision\ -\ Discharge.png",
-  "Slide Title",
-  "Slide instructions"
+  "The Patient has been Discharged",
+  ""
 );
 var careDecisionAdmit = new slide(
   ["", "", "", ""],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/Care\ Decision\ -\ Admit.png",
-  "Slide Title",
-  "Slide instructions"
+  "Specify What is Decided that the Patient Needs",
+  ""
 );
 var neededTreatment = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Needed\ -\ Treatment.png",
-  "Slide Title",
-  "Slide instructions"
+  "Specify What is Decided that the Patient Needs",
+  ""
 );
 var neededTests = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Needed\ -\ Tests.png",
-  "Slide Title",
-  "Slide instructions"
+  "Specify What is Decided that the Patient Needs",
+  ""
 );
 var neededConsults = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Needed\ -\ Consults.png",
-  "Slide Title",
-  "Slide instructions"
+  "Specify What is Decided that the Patient Needs",
+  ""
 );
 
 //An object containing reference pairs for all of the slide choices and their respective slides
