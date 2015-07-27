@@ -1,7 +1,7 @@
 //Set up the first part of the page, with instructions and such
 var wholePage = document.getElementById("wholePage");
 var instructions = "\
-  <h3>This is the ED flowchart.</h3>\
+  <h3>Welcome to the ED flowchart.</h3>\
   <br><br>\
   <div id=\"continue\"><p>Are you ready to continue?</p></div>\
   ";
