@@ -57,28 +57,28 @@ var beforeFirstSlide = new slide(
   ["Survival Flight", "Ambulance", "Walk In", ""],
   ["#4E67C7", "#4E67C7", "#4E67C7", "#ffffff"],
   "./Pictures/Blank.png",
-  "Specify how the Patient Enters the Health System",
+  "Specify how the patient enters the health system",
   "Click <em><strong>these</strong></em> boxes to act on the page."
 );
 var acuityDecisionSurvivalFlight = new slide(
   ["High", "Low", "", ""],
   ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
   "./Pictures/Acuity\ Decision\ -\ Survival\ Flight.png",
-  "Specify What Acuity the Patient is Assigned",
+  "Specify what acuity the patient is assigned",
   ""
 );
 var acuityDecisionAmbulence = new slide(
   ["High", "Low", "", ""],
   ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
   "./Pictures/Acuity\ Decision\ -\ Ambulance.png",
-  "Specify What Acuity the Patient is Assigned",
+  "Specify what acuity the patient is assigned",
   ""
 );
 var acuityDecisionWalkIn = new slide(
   ["High", "Low", "", ""],
   ["#5DCEAE", "#5DCEAE", "#ffffff", "#ffffff"],
   "./Pictures/Acuity\ Decision\ -\ Walk-In.png",
-  "Specify What Acuity the Patient is Assigned",
+  "Specify what acuity the patient is assigned",
   ""
 );
 var highAcuity = new slide(
@@ -92,49 +92,49 @@ var lowAcuity = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Low\ Acuity.png",
-  "Specify What is Decided that the Patient Needs",
+  "Specify what is decided that the patient needs",
   ""
 );
 var careDecisionTreat = new slide(
   ["Treatment", "Tests", "Consults", ""],
   ["#5DCEAE", "#5DCEAE", "#5DCEAE", "#ffffff"],
   "./Pictures/Care\ Decision\ -\ Treat.png",
-  "Specify What the Attending's Orders are",
+  "Specify what the attending's orders are",
   ""
 );
 var careDecisionDischarge = new slide(
   ["", "", "", ""],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/Care\ Decision\ -\ Discharge.png",
-  "The Patient has been Discharged",
+  "The patient has been discharged",
   ""
 );
 var careDecisionAdmit = new slide(
   ["", "", "", ""],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/Care\ Decision\ -\ Admit.png",
-  "Specify What is Decided that the Patient Needs",
+  "Specify what is decided that the patient needs",
   ""
 );
 var neededTreatment = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Needed\ -\ Treatment.png",
-  "Specify What is Decided that the Patient Needs",
+  "Specify what is decided that the patient needs",
   ""
 );
 var neededTests = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Needed\ -\ Tests.png",
-  "Specify What is Decided that the Patient Needs",
+  "Specify what is decided that the patient needs",
   ""
 );
 var neededConsults = new slide(
   ["Treat", "Discharge", "Admit", ""],
   ["#EF7F22", "#EF7F22", "#EF7F22", "#ffffff"],
   "./Pictures/Needed\ -\ Consults.png",
-  "Specify What is Decided that the Patient Needs",
+  "Specify what is decided that the patient needs",
   ""
 );
 

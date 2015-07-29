@@ -50,119 +50,119 @@ var enterInpatient = new slide(
   ["ED", "Direct Admit", "Hospital Transfer", "PACU"],
   ["#ffff00", "#ffff00", "#ffff00", "#ffff00"],
   "./Pictures/Blank.png",
-  "Specify how the Patient Enters the Health System",
+  "Specify how the patient enters the health system",
   "Click <em><strong>these</strong></em> boxes to act on the page."
 );
 var careLevelED = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
   "./Pictures/Care Level Decision - ED.png",
-  "Specify Whether ICU is Needed",
+  "Specify what level of care is needed",
   ""
 );
 var careLevelDirectAdmit = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
   "./Pictures/Care Level Decision - Direct Admit.png",
-  "Specify Whether ICU is Needed",
+  "Specify what level of care is needed",
   ""
 );
 var careLevelHospitalTransfer = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
   "./Pictures/Care Level Decision - Hospital Transfer.png",
-  "Specify Whether ICU is Needed",
+  "Specify what level of care is needed",
   ""
 );
 var careLevelPACU = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
   "./Pictures/Care Level Decision - PACU.png",
-  "Specify Whether ICU is Needed",
+  "Specify what level of care is needed",
   ""
 );
 var careGeneral = new slide(
   ["Treat", "Discharge", "Transfer", ""],
   ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
   "./Pictures/Care Decision - General.png",
-  "Specify what the Patient Needs",
+  "Specify what the patient needs",
   ""
 );
 var careICU = new slide(
   ["Treat", "Discharge", "Transfer", ""],
   ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
   "./Pictures/Care Decision - ICU.png",
-  "Specify what the Patient Needs",
+  "Specify what the patient needs",
   ""
 );
 var treat = new slide(
   ["Treatment", "Tests", "Consults", "Surgery"],
   ["#ffff00", "#ffff00", "#ffff00", "#ffff00"],
   "./Pictures/Treat.png",
-  "Specify the Attending's Orders",
+  "Specify the attending's orders",
   ""
 );
 var discharge = new slide(
   ["", "", "", ""],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/Discharge.png",
-  "The Patient has been Discharged",
+  "The patient has been discharged",
   ""
 );
 var transfer = new slide(
   ["Different Team/Service", "Different Unit", "Different Health System", ""],
   ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
   "./Pictures/Transfer.png",
-  "Specify Where the Patient is Transferred to",
+  "Specify where the patient is transferred to",
   ""
 );
 var careLevelDiffTeamService = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
   "./Pictures/Care Level Decision - Different Team Service.png",
-  "Specify Whether ICU is Needed",
+  "Specify what level of care is needed",
   ""
 );
 var careLevelDiffUnit = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
   "./Pictures/Care Level Decision - Different Unit.png",
-  "Specify Whether ICU is Needed",
+  "Specify what level of care is needed",
   ""
 );
 var diffHealthSystem = new slide(
   ["", "", "", ""],
   ["#ffffff", "#ffffff", "#ffffff", "#ffffff"],
   "./Pictures/Different Health System.png",
-  "The Patient has Left",
+  "The patient has left",
   ""
 );
 var treatmentPatientNeeds = new slide(
   ["Treat", "Discharge", "Transfer", ""],
   ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
   "./Pictures/Care Decision - Treatment.png",
-  "Specify what the Patient Needs",
+  "Specify what the patient needs",
   ""
 );
 var testsPatientNeeds = new slide(
   ["Treat", "Discharge", "Transfer", ""],
   ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
   "./Pictures/Care Decision - Tests.png",
-  "Specify what the Patient Needs",
+  "Specify what the patient needs",
   ""
 );
 var consultsPatientNeeds = new slide(
   ["Treat", "Discharge", "Transfer", ""],
   ["#ffff00", "#ffff00", "#ffff00", "#ffffff"],
   "./Pictures/Care Decision - Consults.png",
-  "Specify what the Patient Needs",
+  "Specify what the patient needs",
   ""
 );
 var surgery = new slide(
   ["ICU", "General", "", ""],
   ["#ffff00", "#ffff00", "#ffffff", "#ffffff"],
   "./Pictures/Surgery.png",
-  "Specify what the Patient Needs",
+  "Specify what level of care is needed",
   ""
 );
 
